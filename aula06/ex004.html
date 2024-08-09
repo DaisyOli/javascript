@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Strings</title>
+    <style>
+        body{
+            font: normal 20 pt Arial
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome? ')
+        document.write(`Ola ${nome} ! Seu nome tem <strong> ${nome.length} </strong> letras. </br> Seu nome em letras maiusculas é ${nome.toUpperCase()} e em letras minusculas é ${nome.toLowerCase()} </br>`)
+        var idade = window.prompt('Qual é a sua idade  ')
+        document.write(`Ola, ${nome}. Você tem ${idade} anos `)
+        var cidade = window.prompt('Qual é a sua cidade? ')
+        document.write(`${nome} e você mora em ${cidade}  `)
+    </script>
+</body>
+</html>

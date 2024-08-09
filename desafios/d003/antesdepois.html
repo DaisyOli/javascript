@@ -1,0 +1,35 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e Sucessor</title>
+    <style>
+        div{
+           font: normal 12pt serif; 
+           text-decoration:wavy;
+           text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0);
+           background-color: rgba(181, 177, 177, 0.384);
+           width: 200px;
+           height: 60px;
+           line-height: 60px;
+           text-align: center;
+           display: inline-block; /*deixar um botão do lado do outro*/
+           border-radius: 5px;
+           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <div onclick="clicar()">Antecessor e Sucessor</div>
+</body>
+<script>
+    function clicar(){
+        var n = Number(window.prompt('Digite um numero'))
+        var suc = (n+1)
+        var ant = (n-1)
+        alert(`Seu numero é ${n}, seu antecessor é ${ant} e seu sucessor é ${suc}`)
+    }
+
+</script>
+</html>

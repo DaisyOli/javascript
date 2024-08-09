@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <style>
+        div{
+           font: normal 12pt serif; 
+           text-decoration:wavy;
+           text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0);
+           background-color: rgba(181, 177, 177, 0.384);
+           width: 130px;
+           height: 60px;
+           line-height: 60px;
+           text-align: center;
+           display: inline-block; /*deixar um botão do lado do outro*/
+           border-radius: 5px;
+           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
+        }
+        p{
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <div onclick="clicar()">Converter</div>
+    <p>Clique no botão para iniciar</p>
+</body>
+<script>
+    function clicar(){
+        var metros = Number(window.prompt('Digite uma distância em metros (m)'))
+        var km = (metros*0.001)
+        var cm = (metros*10**3)
+        window.document.write(`Sua distância em metros é ${metros}, o equivalente em quilômetros é ${km}km e em centimetros é ${cm}cm`)
+    }
+</script>
+</html>

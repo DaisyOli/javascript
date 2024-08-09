@@ -1,0 +1,35 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula troco</title>
+    <style>
+         div{
+           font: normal 12pt serif; 
+           text-decoration:wavy;
+           text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0);
+           background-color: rgba(181, 177, 177, 0.384);
+           width: 170px;
+           height: 60px;
+           line-height: 60px;
+           text-align: center;
+           display: inline-block; /*deixar um botão do lado do outro*/
+           border-radius: 5px;
+           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o troco</h1>
+    <div onclick="clicar()">Comprar produto</div>
+    <script>
+        function clicar(){
+            var prod = window.prompt('Que produto você esta comprando? ')
+            var preço = Number(window.prompt(`Quanto custa o ${prod} que você esta comprando? `))
+            var valor = Number(window.prompt('Qual é o valor que você deu para pagar? '))
+            var troco = (valor-preço)
+            alert(`O seu ${prod} custa ${preço}, você deu ${valor}. Logo, o seu troco vai ser ${troco}`)
+        }
+    </script>
+</body>
+</html>
