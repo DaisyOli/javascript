@@ -1,0 +1,28 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumprimentos</title>
+</head>
+<body>
+    <h1>Ola, como vai você?</h1>
+    Que horas são? <input type="number" name="horas" id="horas">
+    <input type="button" value="verificar" id="verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var horas = window.document.querySelector('input#horas').value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Agora são exatamente ${horas} `
+            if (horas<=12 && horas>=6){
+                res.innerHTML += 'Bom dia'
+            } else if (horas>12 && horas<18){
+                res.innerHTML += 'Boa tarde'
+            } else if (horas=>18 && horas<6){
+                res.innerHTML += 'Boa noite'
+            }
+        }
+    </script>
+    
+</body>
+</html>

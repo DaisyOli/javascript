@@ -1,0 +1,30 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogal ou consoante?</title>
+</head>
+<body>
+    <h1>Vamos adivinhar se você digitou uma vogal ou uma consoante?</h1>
+    Digite uma letra <input type="text" name="letra" id="letra">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var letra = window.document.querySelector('input#letra').value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Sua letra é ${letra}`
+            if (letra == 'a'|| letra == 'e' || letra == 'i' || letra == 'o'|| letra == 'u'){
+                res.innerHTML += ' Você digitou uma vogal'
+            } else {
+                res.innerHTML += ' Você digitou uma consoante'
+            }
+
+
+        }
+        
+        
+        
+    </script>
+</body>
+</html>

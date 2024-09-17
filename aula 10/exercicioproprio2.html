@@ -1,0 +1,27 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos ver se você tem bom gosto?</title>
+</head>
+<body>
+    <h1>Qual é a sua cor preferida?</h1>
+    Digite uma cor <input type="text" name="cor" id="txtcor">
+    <input type="button" value="checar" onclick="checar()">
+    <div id="res"></div>
+    <script>
+        function checar(){
+        var cor = window.document.querySelector('input#txtcor').value
+        var res = window.document.querySelector('div#res')
+        res.innerHTML = `Sua cor é ${cor}`
+        if (cor == 'vermelho' || cor == 'azul' || cor == 'roxo'){
+            res.innerHTML += ' Você tem bom gosto'
+        } else if (cor == 'verde' || cor == 'laranja'){
+            res.innerHTML += 'Você tem um gosto mediano'
+        } else {
+            res.innerHTML += 'Você tem mau gosto'
+        }
+        }
+    </script>
+</body>
+</html>

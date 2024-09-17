@@ -1,0 +1,30 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrologie</title>
+    <link rel="stylesheet" href="styleastro.css">
+</head>
+<body>
+    <header>
+        <h1>Qual é o seu signo do zodiaco?</h1>
+
+    </header>
+    <section>
+        <form id="zodiacForm">
+            <label for="day">Dia:</label>
+            <input type="number" id="day" name="day" min="1" max="31" required>
+    
+            <label for="month">Mês:</label>
+            <input type="number" id="month" name="month" min="1" max="12" required>
+    
+            <button type="submit">Descobrir Signo</button>
+        </form> 
+        <p id="output"></p>    
+    </section>
+    <footer>
+        <p>Créé par <strong>Daisy Oliani</strong></p> 
+    </footer>
+    <script src="scriptastro.js"></script>
+</body>
+</html>
